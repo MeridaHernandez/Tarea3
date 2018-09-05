@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+/*Merida Franchesca Hernandez Castañeda.
+Leer un numero y mostrar el factorial del numero,
+mismo que se describe con el símbolo n! ejemplo:
+5! y se obtiene multiplicando todos los números 
+de el 1 al numero = 1 *2 *3 *4 *5 = 120. 
+No probar con números mayores a 19.*/
+int main()
+{
+    int numero, factorial=1;
+    
+    cout<< "Ingrese un numero que no sea mayor a 19: ";
+    cin>> numero;
+    
+    if(numero <= 19)
+    {
+        for(int x=1; x<=1; x++)
+        {
+            cout << numero << "! = ";
+            for(int i= 1; i <= numero; i++)
+            {
+                cout<< i;
+                if(i<numero)
+                {
+                    cout<< " x ";
+                }
+                factorial*=i;
+            }
+            cout<< " = " << factorial;
+        }
+    }
+    else
+    {
+        cout<< "Error Ingreso un numero mayor a 19";
+    }
+      return 0;
+}
